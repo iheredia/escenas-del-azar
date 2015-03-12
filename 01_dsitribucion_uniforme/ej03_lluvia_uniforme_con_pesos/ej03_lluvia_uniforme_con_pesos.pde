@@ -1,3 +1,6 @@
+// Lluvia que cae con distintas intensidades
+// La logica para elegir donde cae la lluvia esta en la funcion 'randomArea'
+
 ArrayList<Drop> drops = new ArrayList<Drop>();
 Floor floor;
 
@@ -67,12 +70,16 @@ class Floor {
 }
 
 float randomArea() {
+  // Intervalos en los cuales caera lluvia:
   float[][] intervals = { 
     { 0, width*0.2 }, 
     { width*0.3, width*0.6 },
     { width*0.9, width }
   } ;
-  float[] weights = { 10, 3, 2 };
+  // Pesos relativos para cada intervalo
+  // Por ej, teniendo pesos 4, 2 y 1, en el primer intervalo caera el doble de lluvia que en el segundo, y cuatro veces mas que en el tercero. 
+  // A su vez, en el segundo intervalo caera el doble que en el tercero 
+  float[] weights = { 4, 2, 1 };
   
   float totalSum = 0;
   for (int i=0; i<weights.length; i++) {

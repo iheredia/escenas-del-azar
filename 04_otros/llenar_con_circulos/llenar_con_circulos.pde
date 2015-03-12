@@ -1,3 +1,7 @@
+// Se quiere llenar la pantalla con circulos que no se superpongan, y cuyas coordenadas esten elegidas al azar
+// Si se eligen coordenadas al azar sin restricciones y despues se chequea si se puede dibujar ahi (es decir, no se superpone con un circulo ya dibujado) se puede llegar a esperar muuucho tiempo hasta que se llene todo el espacio
+// En cambio, si se lleva registro de los puntos en los cuales esta permitido dibujar, en cada iteracion se elige un punto al azar dentro de estos y el programa llena toda la pantalla sin problemas
+
 boolean spaceLeft = true;
 ArrayList<Circle> circles;
 ArrayList<PVector> coords;

@@ -1,3 +1,10 @@
+// Dos pelotas parten del mismo lugar, con la misma direccion, sentido y velocidad
+// La pelota roja, a la izquierda de la pantalla, rebota segun la ley fisica en la cual el angulo de incidencia es igual al angulo de reflexion
+// Como el rebote es perfecto, luego de un tiempo la pelota vuelve a recorrer exactamente el mismo camino
+// Link: http://es.wikipedia.org/wiki/Reflexi%C3%B3n_(f%C3%ADsica)
+// La pelota azul, a diferencia de la pelota roja, en cada rebote tiene un pequeño error dado por una variable aleatoria con distribucion normal
+// Como los rebotes no son perfectos, si se lo deja el suficiente tiempo, la pelota rebota por toda la pantalla
+
 Ball deterministicBall;
 Ball normalBall;
 

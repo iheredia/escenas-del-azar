@@ -1,3 +1,5 @@
+// Con la misma idea con la cual se dibuja el terreno en el ejemplo anterior, dibujamos un planeta en 3 dimensiones
+
 Planet p;
 float angle = 0;
 float r = 120;

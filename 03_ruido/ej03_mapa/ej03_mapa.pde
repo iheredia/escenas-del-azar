@@ -1,3 +1,6 @@
+// Segun noise(), en cada punto decido si dibujar un pixel que represente tierra o mar, dependiendo de que tan cerca de 1 este el resultado del ruido
+// Con la misma idea, una capa superior de ruido decide que tan transparente se vuelve una imagen blanca, y se va moviendo en la coordenada x
+
 PGraphics terrain;
 PGraphics clouds;
 int nextX;
@@ -36,8 +39,7 @@ color heightColorAt(float x, float y) {
   float noiseSensitivity = 0.01;
   x *= noiseSensitivity;
   y *= noiseSensitivity;
-  float z = dist(x, y, width*noiseSensitivity/2, height*noiseSensitivity/2);
-  float n = noise(x, y, z);
+  float n = noise(x, y);
   color c;
   color deepBlue = color(10, 10, 50);
   color lightBlue = color(40, 220, 160);

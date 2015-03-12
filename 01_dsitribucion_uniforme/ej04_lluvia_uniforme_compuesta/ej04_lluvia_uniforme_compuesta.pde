@@ -1,3 +1,6 @@
+// Lluvia que cae menos mientras mas alejada se encuentra de la izquierda de la pantalla
+// Las coordenadas en las cuales cae la lluvia siguen una distribucion dada por componer 'random' consigo misma (ver el pdf)
+
 ArrayList<Drop> drops = new ArrayList<Drop>();
 Floor floor;
 

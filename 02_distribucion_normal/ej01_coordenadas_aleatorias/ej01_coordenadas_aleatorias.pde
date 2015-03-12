@@ -1,3 +1,7 @@
+// Coordenadas de la pantalla elegidas al azar
+// Los puntos rojos siguen una distribucion uniforme, donde cada coordenada x e y esta restringida segun los parametros de random()
+// Los puntos azules siguen una distribucion normal, donde cada coordenada x e y tiene un centro y una distancia, y se obtienen mediante 'centro + randomGaussian() * distancia/3'
+
 void setup() {
   size(900, 600);
   randomSeed(7);

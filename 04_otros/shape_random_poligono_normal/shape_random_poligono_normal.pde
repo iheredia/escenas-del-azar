@@ -1,3 +1,6 @@
+// Con la idea de elegir puntos al azar dentro de formas mas complejas, se eligen puntos al azar dentro de triangulos
+// El primer caso elige puntos solo dentro del triangulo rojo, mientras que el segundo agregan un pequeño error a las coordenadas del triangulo azul mediante una distribucion normal (i.e. llamando a randomGaussian() )
+
 RegularPolygon uniformTriangle, normalTriangle;
 
 void setup() {

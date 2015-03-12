@@ -1,3 +1,6 @@
+// Con la idea de elegir puntos al azar dentro de formas mas complejas, se eligen puntos al azar dentro de un texto
+// El primer caso elige puntos solo dentro del texto, mientras que el segundo y tercero agregan un pequeño error a las coordenadas mediante una distribucion normal (i.e. llamando a randomGaussian() )
+
 RandomShape p5bsas;
 
 void setup() {

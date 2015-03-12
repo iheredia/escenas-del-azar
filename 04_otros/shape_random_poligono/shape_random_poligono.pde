@@ -1,3 +1,5 @@
+// Con la idea de elegir puntos al azar dentro de formas mas complejas, se eligen puntos al azar dentro de poligonos regulares
+
 Polygon triangle, pentagon, hexagon, heptagon, cross;
 
 void setup() {

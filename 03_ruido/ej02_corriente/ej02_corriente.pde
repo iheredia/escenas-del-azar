@@ -1,3 +1,5 @@
+// Segun noise() en cada momento decido si cada circulo se mueve hacia arriba o hacia abajo
+
 ArrayList<Circle> circles;
 
 void setup() {

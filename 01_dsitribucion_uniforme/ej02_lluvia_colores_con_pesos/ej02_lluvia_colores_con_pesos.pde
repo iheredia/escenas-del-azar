@@ -1,6 +1,10 @@
-ArrayList<Drop> drops = new ArrayList<Drop>();
+// Lluvia cuyos colores se eligen al azar del array 'colors' usando los pesos dados en 'weights' 
+// Por ej, si los pesos son 75, 20 y 5, entonces aproximadamente cada 100 gotas, 75 seran del primer color, 20 del segundo y 5 del tercero
+// La logica para traducir los colores y sus pesos se encuentra en la funcion 'randomColor'
+
 color[] colors = { color(130, 240, 240), color(150, 25, 200), color(200, 0, 0) };
 float[] weights = { 75, 20, 5 };
+ArrayList<Drop> drops = new ArrayList<Drop>();
   
 void setup() {
   size(900, 600);
